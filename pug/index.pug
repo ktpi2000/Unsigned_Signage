@@ -2,12 +2,52 @@ doctype html
 html(lang='ja')
     head
         meta(charset="utf-8")
-        title タイトル
+        title Unsigned_Signage
+        meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1")
         link(href="/css/style.css", rel="stylesheet")
+        link(href="/css/swiper.min.css", rel="stylesheet")
+        script(src="/js/index.js")
+
     body
-        div#header
-        div#navigation
-        div#content
-            h1 helloWorld!
-            h2 good
-        div#footer
+        h1 Unsigned2019
+        .split.left-box
+            #time
+        .split.right-box
+            .swiper-container
+                .swiper-wrapper
+                    .swiper-slide
+                        h1 ドリンク販売
+                        ul
+                            li コーラ
+                            li スポーツドリンク
+                    .swiper-slide
+                        h1 DAY1
+                        h1 ANISONside
+                    .swiper-slide
+                        h1 DAY2
+                        h1 DANCEside
+                    .swiper-slide
+                        h1 Unsignedステッカー配布！
+                // Add Pagination
+                .swiper-pagination
+        // Swiper JS
+        script(src="/js/swiper.min.js")
+
+        // Swiper
+        script.
+            var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+            },
+            pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            },
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+            });
