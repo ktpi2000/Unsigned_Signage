@@ -1,0 +1,110 @@
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    height: 90vh;
+    margin-left: 10px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+    -webkit-appearance: none;
+}
+
+.split {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+
+
+/*left */
+
+.left-box {
+    left: 0;
+}
+
+#time {
+    font-size: 20px;
+}
+
+.djtime {
+    background: black;
+    color: white;
+    width: 30%;
+    padding: 10px 10px;
+    font-size: 50px;
+    text-align: center;
+}
+
+#icon {
+    width: 600px;
+    height: 600px;
+    border-radius: 300px;
+}
+
+.djicon {
+    text-align: center;
+}
+
+#DJ {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.scroll {
+    margin: auto;
+    width: 80%;
+    font-size: 140%;
+    line-height: 1.5em;
+    text-align: center;
+    color: #000000;
+    background: #fff;
+    overflow: hidden;
+}
+
+.scroll span {
+    display: inline-block;
+    padding-left: 100%;
+    white-space: nowrap;
+    line-height: 1em;
+    animation: scrollAnime 14s linear infinite;
+    width: 80%;
+}
+
+@keyframes scrollAnime {
+    0% {
+        transform: translateX(0)
+    }
+    100% {
+        transform: translateX(-100%)
+    }
+}
+
+
+/*right*/
+
+.right-box {
+    right: 0;
+    overflow-y: scroll;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    font-size: 20px;
+    background: #fff;
+}

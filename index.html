@@ -2,16 +2,74 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>タイトル</title>
+    <title>Unsigned_Signage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/swiper.min.css" rel="stylesheet">
+    <script src="/js/index.js"></script>
   </head>
   <body>
-    <div id="header"></div>
-    <div id="navigation"></div>
-    <div id="content">
-      <h1>helloWorld!</h1>
-      <h2>good</h2>
+    <h1>Unsigned2019</h1>
+    <div class="split left-box">
+      <div id="time"></div><br>
+      <h1>Next DJ</h1>
+      <div class="djtime">
+        <div id="DJtime"></div>
+      </div><br>
+      <div id="DJ"></div><br>
+      <div class="djicon"><img id="icon" src=""></div><br>
+      <div class="scroll"><span>   
+          <div id="comment"></div></span></div>
     </div>
-    <div id="footer"></div>
+    <div class="split right-box">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <h1>ドリンク販売</h1>
+            <ul>
+              <li>コーラ</li>
+              <li>スポーツドリンク</li>
+              <li>お茶</li>
+              <li>オレンジジュース</li>
+            </ul>
+            <h2>100円！ステッカーゲット出来るぞ</h2>
+          </div>
+          <div class="swiper-slide">
+            <h1>DAY1</h1>
+            <h1>ANISONside</h1>
+          </div>
+          <div class="swiper-slide">
+            <h1>DAY2</h1>
+            <h1>DANCEside</h1>
+          </div>
+          <div class="swiper-slide">
+            <h1>Unsignedステッカー配布！</h1>
+          </div>
+        </div>
+        <!-- Add Pagination-->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <!-- Swiper JS-->
+    <script src="/js/swiper.min.js"></script>
+    <!-- Swiper-->
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+      },
+      pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      },
+      navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+      },
+      });
+    </script>
   </body>
 </html>
