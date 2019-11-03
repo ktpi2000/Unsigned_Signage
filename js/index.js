@@ -75,7 +75,7 @@ function showClock() {
             document.getElementById("DJtime").innerHTML = "11:00~";
             document.getElementById("DJ").innerHTML = "Unsigned2019";
             document.getElementById("icon").src = "../img/un_8th_icon.png";
-            document.getElementById("comment").innerHTML = "11:00から開始です";
+            document.getElementById("comment").innerHTML = "ご来場ありがとうございました。明日のDANCEsideも来てください！";
         }
     } else if (MonthDay == 1104) {
         if (1100 <= HourMin && 1130 > HourMin) {
