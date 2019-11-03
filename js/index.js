@@ -139,7 +139,10 @@ function showClock() {
             document.getElementById("icon").src = "../img/saboten.jpg";
             document.getElementById("comment").innerHTML = "音研の会長をしています。速い音楽が好きです";
         } else {
-
+            document.getElementById("DJtime").innerHTML = "11:00~";
+            document.getElementById("DJ").innerHTML = "Unsigned2019";
+            document.getElementById("icon").src = "../img/un_8th_icon.png";
+            document.getElementById("comment").innerHTML = "2日目は、DANCEside。11:00から開始です。";
         }
     }
 }
