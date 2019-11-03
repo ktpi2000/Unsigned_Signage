@@ -72,10 +72,10 @@ function showClock() {
             document.getElementById("icon").src = "../img/koko1.jpg";
             document.getElementById("comment").innerHTML = "名前の通り、好きなカレー屋はゴーゴーカレーです。2日に誕生日なので皆さん祝ってください。";
         } else {
-            document.getElementById("DJtime").innerHTML = "16:20-16:50";
+            document.getElementById("DJtime").innerHTML = "11:00~";
             document.getElementById("DJ").innerHTML = "Unsigned2019";
             document.getElementById("icon").src = "../img/un_8th_icon.png";
-            document.getElementById("comment").innerHTML = "1:00から開始です";
+            document.getElementById("comment").innerHTML = "11:00から開始です";
         }
     } else if (MonthDay == 1104) {
         if (1100 <= HourMin && 1130 > HourMin) {
